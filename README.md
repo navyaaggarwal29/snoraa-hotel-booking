@@ -39,8 +39,7 @@ A premium, modern hotel booking platform built with **React** and **Vite**. VYBE
     ```
 4.  Open `http://localhost:5173` to view it in the browser.
 
-##  Screenshots
-##  Screenshots
+## Screenshots
 ![Home Page](public/assets/home_screenshot.png)
 ![Search Results](public/assets/search_screenshot.png)
 ![Discovery Tabs](public/assets/discovery_screenshot.png)
