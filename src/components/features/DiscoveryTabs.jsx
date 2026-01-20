@@ -7,7 +7,7 @@ const DiscoveryTabs = () => {
 
     const categories = {
         'Beach Vacations': [
-            { name: 'Maldives', img: 'https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=500&q=80' },
+            { name: 'Maldives', img: 'https://images.unsplash.com/photo-1573843980622-be7d5fe6d467?w=500&q=80' },
             { name: 'Krabi', img: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=500&q=80' },
             { name: 'Phuket', img: '/phuket-custom-new.png' },
             { name: 'Langkawi', img: '/langkawi-custom.png' },
@@ -32,7 +32,7 @@ const DiscoveryTabs = () => {
             { name: 'Jodhpur', img: '/jodhpur-custom.png' },
             { name: 'Udaipur', img: 'https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?w=500&q=80' },
             { name: 'Abu Dhabi', img: '/abudhabi-custom.png' },
-            { name: 'Dubai', img: '/dubai-dest.png' },
+            { name: 'Dubai', img: 'https://images.unsplash.com/photo-1546412414-e1885259563a?w=500&q=80' },
             { name: 'Mysore', img: '/mysore-royals.png' }
         ],
         'Indian Pilgrimages': [

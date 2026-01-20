@@ -33,21 +33,35 @@ const Navbar = () => {
             }}>
                 <Link to="/" style={{
                     display: 'flex',
-                    alignItems: 'center',
+                    alignItems: 'flex-start',
                     gap: '0.75rem',
                     textDecoration: 'none'
                 }}>
                     <ThemeLogo style={{ height: '42px', width: '42px' }} />
-                    <span style={{
-                        fontFamily: "'Outfit', sans-serif",
-                        fontWeight: '500',
-                        fontSize: '2rem',
-                        color: 'var(--primary)',
-                        letterSpacing: '0.15em',
-                        paddingBottom: '4px'
-                    }}>
-                        VYBE Haus
-                    </span>
+                    <div style={{ display: 'flex', flexDirection: 'column', marginTop: '6px' }}>
+                        <span style={{
+                            fontFamily: "'Outfit', sans-serif",
+                            fontWeight: '500',
+                            fontSize: '2rem',
+                            color: 'var(--primary)',
+                            letterSpacing: '0.15em',
+                            lineHeight: '1',
+                            paddingBottom: '5px'
+                        }}>
+                            VYBE Haus
+                        </span>
+                        <span style={{
+                            fontFamily: "'Outfit', sans-serif",
+                            fontSize: '0.75rem',
+                            color: 'var(--text-main)',
+                            opacity: 0.8,
+                            letterSpacing: '0.05em',
+                            fontWeight: '400',
+                            marginLeft: '70px'
+                        }}>
+                            - where your mood checks in
+                        </span>
+                    </div>
                 </Link>
 
                 <nav style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>

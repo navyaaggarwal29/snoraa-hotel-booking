@@ -26,12 +26,13 @@ const SearchBar = ({ className = '' }) => {
             className={`${className} search-bar-card`}
             style={{
                 display: 'flex',
-                padding: '1rem',
-                borderRadius: 'var(--radius-lg)',
-                boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
+                padding: '1.25rem', // Slightly more padding
+                borderRadius: 'var(--radius-xl)', // Increased radius
+                boxShadow: 'var(--shadow-float)', // Soft float shadow
                 maxWidth: '1100px',
                 width: '100%',
-                alignItems: 'center'
+                alignItems: 'center',
+                border: '1px solid rgba(255,255,255,0.8)' // Subtle border to aid the float
             }}
         >
             {/* Destination Input */}

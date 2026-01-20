@@ -15,7 +15,7 @@ const Home = () => {
                 flexDirection: 'column',
                 alignItems: 'center',
                 padding: '2rem 1rem 0',
-                background: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url("/home-bg-new.jpg")', // New sunset image
+                background: 'linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url("/home-bg-new.jpg")', // Lighter dark overlay
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 color: 'white'

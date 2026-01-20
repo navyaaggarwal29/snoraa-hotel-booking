@@ -34,14 +34,14 @@ const destinations = [
         id: 'dubai',
         name: 'Dubai',
         description: 'The city of life and luxury',
-        image: 'https://images.unsplash.com/photo-1512453979798-5ea90b7cadc9?w=800&auto=format&fit=crop&q=60',
+        image: 'https://images.unsplash.com/photo-1546412414-e1885259563a?w=800&auto=format&fit=crop&q=60',
         size: 'large'
     },
     {
         id: 'maldives',
         name: 'Maldives',
         description: 'Tropical paradise boastings stunning beaches',
-        image: 'https://images.unsplash.com/photo-1514282401047-d77a7149ba99?w=800&auto=format&fit=crop&q=60',
+        image: 'https://images.unsplash.com/photo-1573843980622-be7d5fe6d467?w=800&auto=format&fit=crop&q=60',
         size: 'normal'
     }
 ];
