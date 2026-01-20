@@ -23,17 +23,15 @@ const SearchBar = ({ className = '' }) => {
     return (
         <form
             onSubmit={handleSearch}
-            className={className}
+            className={`${className} search-bar-card`}
             style={{
                 display: 'flex',
-                background: 'white',
                 padding: '1rem',
                 borderRadius: 'var(--radius-lg)',
                 boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
                 maxWidth: '1100px',
                 width: '100%',
-                alignItems: 'center',
-                border: '1px solid var(--border)'
+                alignItems: 'center'
             }}
         >
             {/* Destination Input */}
@@ -53,7 +51,8 @@ const SearchBar = ({ className = '' }) => {
                         fontSize: '1.5rem',
                         fontWeight: 'bold',
                         color: 'var(--text-main)',
-                        padding: '0.25rem 0'
+                        padding: '0.25rem 0',
+                        background: 'transparent'
                     }}
                 />
                 <span style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>India</span>
@@ -75,7 +74,9 @@ const SearchBar = ({ className = '' }) => {
                         fontSize: '1.25rem',
                         fontWeight: 'bold',
                         color: 'var(--text-main)',
-                        fontFamily: 'inherit'
+                        fontFamily: 'inherit',
+                        background: 'transparent',
+                        colorScheme: 'light dark'
                     }}
                 />
             </div>
@@ -96,7 +97,9 @@ const SearchBar = ({ className = '' }) => {
                         fontSize: '1.25rem',
                         fontWeight: 'bold',
                         color: 'var(--text-main)',
-                        fontFamily: 'inherit'
+                        fontFamily: 'inherit',
+                        background: 'transparent',
+                        colorScheme: 'light dark'
                     }}
                 />
             </div>
@@ -125,10 +128,10 @@ const SearchBar = ({ className = '' }) => {
                             fontWeight: 'bold',
                             color: 'var(--text-main)',
                             marginLeft: '0.5rem',
-                            textAlign: 'right'
+                            textAlign: 'right',
+                            background: 'transparent'
                         }}
                     />
-                    <span style={{ fontSize: '0.875rem', color: 'var(--text-main)' }}>Adults</span>
                 </div>
             </div>
 

@@ -1,14 +1,21 @@
 :root {
-  /* Color Palette - Snoraa (Goibibo Inspired) */
-  --primary: #ef6614;
-  --primary-dark: #d94e00;
-  --primary-light: #ff8c4b;
-  --secondary: #2274e0;
-  --accent: #ffbedb;
+  /* Color Palette - VYBE Haus Refined */
+  --primary: #C87A4A;
+  /* Muted clay / soft terracotta */
+  --primary-dark: #A6633B;
+  /* Darker clay */
+  --primary-light: #D9956D;
+  /* Lighter clay */
+  --secondary: #8B857F;
+  /* Soft taupe / warm grey */
+  --accent: #E8D5C8;
+  /* Soft beige accent */
 
-  --background: #f8fafc;
+  --background: #F7F5F2;
+  /* Warm ivory */
   --surface: #ffffff;
-  --text-main: #141823;
+  --text-main: #2F2F2F;
+  /* Charcoal */
   --text-muted: #777777;
   --border: #dfe1e5;
   --card-bg: #ffffff;
@@ -46,16 +53,17 @@
 }
 
 [data-theme='dark'] {
-  --primary: #ff8c4b;
-  /* Lighter orange for dark mode */
-  --primary-dark: #ef6614;
+  --primary: #C77C55;
+  /* Muted clay / warm coral */
+  --primary-dark: #A6633B;
   --primary-light: #3a2e22;
   --secondary: #60a5fa;
 
   --background: #0f172a;
   --surface: #1e293b;
   --card-bg: #1e293b;
-  --text-main: #f1f5f9;
+  --text-main: #E0E0E0;
+  /* Off-white, not pure white */
   --text-muted: #94a3b8;
   --border: #334155;
 
@@ -135,4 +143,21 @@ img {
 .btn-secondary:hover {
   background-color: var(--background);
   border-color: var(--text-muted);
+}
+
+/* Search Bar Custom Styles */
+.search-bar-card {
+  background: #f8f8f8;
+  /* A lil darker white/blend */
+  transition: all 0.3s ease;
+  border: 1px solid var(--border);
+}
+
+[data-theme='dark'] .search-bar-card {
+  background: rgba(255, 255, 255, 0.08) !important;
+  /* Dark translucent */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }

@@ -22,7 +22,7 @@ const Input = ({ label, error, containerClass = '', ...props }) => {
                     padding: '0.75rem',
                     borderRadius: 'var(--radius-md)',
                     border: `1px solid ${error ? 'var(--danger)' : 'var(--border)'}`,
-                    backgroundColor: 'white',
+                    backgroundColor: 'var(--card-bg)',
                     fontSize: 'var(--font-size-base)',
                     outline: 'none',
                     transition: 'border-color 0.2s'

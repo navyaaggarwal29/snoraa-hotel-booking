@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
       </main>
       <footer style={{ background: '#1c1c1c', color: 'white', padding: '2rem 1rem', marginTop: 'auto' }}>
         <div className="container">
-          <p>&copy; 2026 Snoraa. All rights reserved.</p>
+          <p>&copy; 2026 VYBE Haus. All rights reserved.</p>
         </div>
       </footer>
     </div>

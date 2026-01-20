@@ -4,6 +4,7 @@ import { useAuth } from '../../context/AuthContext';
 import { useTheme } from '../../context/ThemeContext';
 import { User, LogOut, Calendar, Sun, Moon } from 'lucide-react';
 import Button from './Button';
+import ThemeLogo from './ThemeLogo';
 
 const Navbar = () => {
     const { user, logout } = useAuth();
@@ -36,16 +37,16 @@ const Navbar = () => {
                     gap: '0.75rem',
                     textDecoration: 'none'
                 }}>
-                    <img src="/snoraa_logo_icon.png" alt="Snoraa" style={{ height: '42px', width: 'auto', objectFit: 'contain' }} />
+                    <ThemeLogo style={{ height: '42px', width: '42px' }} />
                     <span style={{
                         fontFamily: "'Outfit', sans-serif",
-                        fontWeight: '700',
+                        fontWeight: '500',
                         fontSize: '2rem',
                         color: 'var(--primary)',
-                        letterSpacing: '-0.5px',
+                        letterSpacing: '0.15em',
                         paddingBottom: '4px'
                     }}>
-                        Snoraa
+                        VYBE Haus
                     </span>
                 </Link>
 

@@ -18,7 +18,7 @@ const ServiceIcons = () => {
             display: 'flex',
             justifyContent: 'center',
             gap: '2rem',
-            background: 'white',
+            background: 'var(--card-bg)',
             padding: '1rem 2rem',
             borderRadius: 'var(--radius-lg)',
             boxShadow: '0 4px 20px rgba(0,0,0,0.1)',

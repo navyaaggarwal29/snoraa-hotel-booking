@@ -152,7 +152,7 @@ const Profile = () => {
                                                             <p><strong>Guests:</strong> ${booking.guests}</p>
                                                             <p><strong>Total Paid:</strong> ₹${booking.totalPrice}</p>
                                                             <hr/>
-                                                            <p>Thank you for booking with Snoraa!</p>
+                                                            <p>Thank you for booking with VYBE Haus!</p>
                                                         </body>
                                                     </html>
                                                 `;

@@ -11,7 +11,35 @@ export const hotels = [
         amenities: ['Spa', 'Heated Pool', 'Fine Dining', 'Valley View'],
         type: 'Hotel',
         description: 'A heritage hotel offering colonial charm and stunning views of the Himalayas.',
-        rooms: [{ id: 's1-r1', name: 'Luxury Room', price: 15000, capacity: 2, description: 'Classic decor with valley views' }]
+        rooms: [
+            {
+                id: 's1-r1',
+                name: 'Luxury Room',
+                price: 15000,
+                capacity: 2,
+                description: 'Classic decor with valley views',
+                features: ['King Bed', 'Valley View', 'Free Breakfast', 'Bathtub'],
+                image: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500&auto=format&fit=crop&q=60'
+            },
+            {
+                id: 's1-r2',
+                name: 'Premier Valley View',
+                price: 18000,
+                capacity: 2,
+                description: 'Panoramic valley views with balcony',
+                features: ['King Bed', 'Private Balcony', 'Free Breakfast', 'Dinner Included'],
+                image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500&auto=format&fit=crop&q=60'
+            },
+            {
+                id: 's1-r3',
+                name: 'Oberoi Suite',
+                price: 35000,
+                capacity: 4,
+                description: 'Expansive suite with separate living area',
+                features: ['2 King Beds', 'Living Room', 'Butler Service', 'All Meals Included'],
+                image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=500&auto=format&fit=crop&q=60'
+            }
+        ]
     },
     {
         id: 'shimla-2',
@@ -24,7 +52,26 @@ export const hotels = [
         amenities: ['Infinity Pool', 'Spa', 'Nature Walks', 'Tennis'],
         type: 'Resort',
         description: 'Luxury resort located 8,000 feet above sea level.',
-        rooms: [{ id: 's2-r1', name: 'Premier Mountain View', price: 22000, capacity: 2, description: 'Unmatched mountain vistas' }]
+        rooms: [
+            {
+                id: 's2-r1',
+                name: 'Premier Mountain View',
+                price: 22000,
+                capacity: 2,
+                description: 'Unmatched mountain vistas',
+                features: ['King Bed', 'Mountain View', 'Heated Floor', 'Free Breakfast'],
+                image: '/premier-mountain-view.png'
+            },
+            {
+                id: 's2-r2',
+                name: 'Deluxe Suite',
+                price: 28000,
+                capacity: 3,
+                description: 'Luxury suite with fireplace',
+                features: ['King Bed', 'Fireplace', 'Living Area', 'Breakfast & Dinner'],
+                image: 'https://images.unsplash.com/photo-1591088398332-8a7791972843?w=500&auto=format&fit=crop&q=60'
+            }
+        ]
     },
     {
         id: 'shimla-3',
@@ -37,7 +84,35 @@ export const hotels = [
         amenities: ['Gym', 'Game Room', 'Bar', 'Mall Road Access'],
         type: 'Hotel',
         description: 'Located right next to the tourism lift on Mall Road.',
-        rooms: [{ id: 's3-r1', name: 'Deluxe Room', price: 6500, capacity: 2, description: 'Modern amenities near Mall Road' }]
+        rooms: [
+            {
+                id: 's3-r1',
+                name: 'Deluxe Room',
+                price: 6500,
+                capacity: 2,
+                description: 'Modern amenities near Mall Road',
+                features: ['Queen Bed', 'City View', 'WiFi'],
+                image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=500&auto=format&fit=crop&q=60'
+            },
+            {
+                id: 's3-r2',
+                name: 'Super Deluxe',
+                price: 7500,
+                capacity: 2,
+                description: 'Spacious room with better views',
+                features: ['King Bed', 'Valley View', 'Mini Bar', 'WiFi'],
+                image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=500&auto=format&fit=crop&q=60'
+            },
+            {
+                id: 's3-r3',
+                name: 'Family Suite',
+                price: 10500,
+                capacity: 4,
+                description: 'Two interconnected rooms',
+                features: ['2 Queen Beds', 'Extra Space', 'Bathtub'],
+                image: '/family-suite.png'
+            }
+        ]
     },
     {
         id: 'shimla-4',
@@ -50,7 +125,26 @@ export const hotels = [
         amenities: ['AC', 'WiFi', 'Restaurant', 'Parking'],
         type: 'Resort',
         description: 'One of the biggest hotels in Shimla, offering panoramic views.',
-        rooms: [{ id: 's4-r1', name: 'Premium Room', price: 5500, capacity: 3, description: 'Spacious room for families' }]
+        rooms: [
+            {
+                id: 's4-r1',
+                name: 'Premium Room',
+                price: 5500,
+                capacity: 3,
+                description: 'Spacious room for families',
+                features: ['King Bed', 'Sofa Bed', 'Valley View'],
+                image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=500&auto=format&fit=crop&q=60'
+            },
+            {
+                id: 's4-r2',
+                name: 'Maharaja Suite',
+                price: 8500,
+                capacity: 4,
+                description: 'Royal experience with best views',
+                features: ['King Bed', 'Living Area', 'Panoramic View'],
+                image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500&auto=format&fit=crop&q=60'
+            }
+        ]
     },
     {
         id: 'shimla-5',
@@ -63,7 +157,26 @@ export const hotels = [
         amenities: ['WiFi', 'Restaurant', 'Couple Friendly'],
         type: 'Hotel',
         description: 'Located in the heart of Mall Road, offering convenient stays.',
-        rooms: [{ id: 's5-r1', name: 'Standard Room', price: 3500, capacity: 2, description: 'Budget friendly on Mall Road' }]
+        rooms: [
+            {
+                id: 's5-r1',
+                name: 'Standard Room',
+                price: 3500,
+                capacity: 2,
+                description: 'Budget friendly on Mall Road',
+                features: ['Double Bed', 'TV', 'WiFi'],
+                image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=500&auto=format&fit=crop&q=60'
+            },
+            {
+                id: 's5-r2',
+                name: 'Deluxe Room',
+                price: 4500,
+                capacity: 2,
+                description: 'Upgraded amenities',
+                features: ['Queen Bed', 'City View', 'Coffee Maker'],
+                image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500&auto=format&fit=crop&q=60'
+            }
+        ]
     },
 
     // --- GOA (5 Hotels) ---
@@ -78,7 +191,35 @@ export const hotels = [
         amenities: ['Private Beach', 'Golf', 'Spa', 'Pool'],
         type: 'Resort',
         description: 'Mediterranean-style resort located on the Benaulim beach.',
-        rooms: [{ id: 'g1-r1', name: 'Garden Villa', price: 25000, capacity: 2, description: 'Private pool villa' }]
+        rooms: [
+            {
+                id: 'g1-r1',
+                name: 'Garden Villa',
+                price: 25000,
+                capacity: 2,
+                description: 'Private pool villa with garden',
+                features: ['Private Pool', 'Garden View', 'King Bed'],
+                image: 'https://images.unsplash.com/photo-1571896349842-6e53ce41be03?w=500&auto=format&fit=crop&q=60'
+            },
+            {
+                id: 'g1-r2',
+                name: 'Sea View Suite',
+                price: 35000,
+                capacity: 2,
+                description: 'Suite with direct sea view',
+                features: ['Ocean View', 'Balcony', 'Jacuzzi'],
+                image: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=500&auto=format&fit=crop&q=60'
+            },
+            {
+                id: 'g1-r3',
+                name: 'Presidential Villa',
+                price: 80000,
+                capacity: 6,
+                description: '3-bedroom villa with butler service',
+                features: ['3 Bedrooms', 'Private Butler', 'Luxury Pool'],
+                image: 'https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=500&auto=format&fit=crop&q=60'
+            }
+        ]
     },
     {
         id: 'goa-2',
@@ -91,7 +232,26 @@ export const hotels = [
         amenities: ['Nightclub', 'Beach Access', 'Rock Pool'],
         type: 'Hotel',
         description: 'Vibrant luxury hotel at Vagator Beach.',
-        rooms: [{ id: 'g2-r1', name: 'Wonderful Room', price: 18000, capacity: 2, description: 'Stylish and modern' }]
+        rooms: [
+            {
+                id: 'g2-r1',
+                name: 'Wonderful Room',
+                price: 18000,
+                capacity: 2,
+                description: 'Stylish and modern with balcony',
+                features: ['Modern Art', 'Balcony', 'Sound System'],
+                image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=500&auto=format&fit=crop&q=60'
+            },
+            {
+                id: 'g2-r2',
+                name: 'Spectacular Room',
+                price: 22000,
+                capacity: 2,
+                description: 'Ocean view room',
+                features: ['Ocean View', 'Open Bath', 'Terrace'],
+                image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&auto=format&fit=crop&q=60'
+            }
+        ]
     },
     {
         id: 'goa-3',
@@ -104,7 +264,26 @@ export const hotels = [
         amenities: ['Pool', 'Spa', 'WiFi'],
         type: 'Resort',
         description: 'Portuguese style architecture near Candolim Beach.',
-        rooms: [{ id: 'g3-r1', name: 'Heritage Room', price: 6000, capacity: 2, description: 'Classic decor' }]
+        rooms: [
+            {
+                id: 'g3-r1',
+                name: 'Heritage Room',
+                price: 6000,
+                capacity: 2,
+                description: 'Classic decor',
+                features: ['Vintage Decor', 'Garden View', 'WiFi'],
+                image: 'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=500&auto=format&fit=crop&q=60'
+            },
+            {
+                id: 'g3-r2',
+                name: 'Terrace Room',
+                price: 7500,
+                capacity: 2,
+                description: 'Room with a large private terrace',
+                features: ['Private Terrace', 'Bathtub', 'King Bed'],
+                image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=500&auto=format&fit=crop&q=60'
+            }
+        ]
     },
     {
         id: 'goa-4',
@@ -145,7 +324,26 @@ export const hotels = [
         amenities: ['River View', 'Spa', 'Pool'],
         type: 'Resort',
         description: 'Luxury riverside resort on the banks of Beas.',
-        rooms: [{ id: 'm1-r1', name: 'Premium Room', price: 14000, capacity: 2, description: 'Riverside views' }]
+        rooms: [
+            {
+                id: 'm1-r1',
+                name: 'Premium Room',
+                price: 14000,
+                capacity: 2,
+                description: 'Riverside views with balcony',
+                features: ['River View', 'Balcony', 'King Bed'],
+                image: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=500&auto=format&fit=crop&q=60' // Riverside room
+            },
+            {
+                id: 'm1-r2',
+                name: 'Luxury Suite',
+                price: 18000,
+                capacity: 2,
+                description: 'Large suite with jacuzzi',
+                features: ['Jacuzzi', 'River View', 'Living Room'],
+                image: 'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=500&auto=format&fit=crop&q=60' // Luxury suite
+            }
+        ]
     },
     {
         id: 'manali-2',
@@ -158,7 +356,26 @@ export const hotels = [
         amenities: ['Discotheque', 'Spa', 'Gym'],
         type: 'Hotel',
         description: 'Famous for its nightlife and river views.',
-        rooms: [{ id: 'm2-r1', name: 'Classic Room', price: 5500, capacity: 2, description: 'Comfortable stay' }]
+        rooms: [
+            {
+                id: 'm2-r1',
+                name: 'Classic Room',
+                price: 5500,
+                capacity: 2,
+                description: 'Comfortable stay',
+                features: ['Queen Bed', 'City View', 'Heater'],
+                image: 'https://images.unsplash.com/photo-1616594039964-40891a909d93?w=500&auto=format&fit=crop&q=60' // Warm classic room
+            },
+            {
+                id: 'm2-r2',
+                name: 'River View',
+                price: 7000,
+                capacity: 2,
+                description: 'Direct view of Beas river',
+                features: ['River View', 'King Bed', 'Coffee Maker'],
+                image: 'https://images.unsplash.com/photo-1596394516093-500&auto=format&fit=crop&q=60' // Different room view
+            }
+        ]
     },
     {
         id: 'manali-3',
@@ -171,7 +388,26 @@ export const hotels = [
         amenities: ['Bonfire', 'Activity Center', 'Restaurant'],
         type: 'Resort',
         description: 'Set amidst apple orchards with stunning views.',
-        rooms: [{ id: 'm3-r1', name: 'Privilege Room', price: 4800, capacity: 3, description: 'Great for families' }]
+        rooms: [
+            {
+                id: 'm3-r1',
+                name: 'Privilege Room',
+                price: 4800,
+                capacity: 3,
+                description: 'Great for families',
+                features: ['2 Queen Beds', 'Mountain View', 'Heater'],
+                image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=500&auto=format&fit=crop&q=60' // Spacious room
+            },
+            {
+                id: 'm3-r2',
+                name: 'Cottage',
+                price: 8000,
+                capacity: 4,
+                description: 'Private cottage in orchard',
+                features: ['Private Cottage', 'Garden', 'Kitchenette'],
+                image: 'https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=500&auto=format&fit=crop&q=60' // Cottage
+            }
+        ]
     },
     {
         id: 'manali-4',
@@ -184,7 +420,26 @@ export const hotels = [
         amenities: ['Garden', 'Cafe', 'WiFi'],
         type: 'Hostel',
         description: 'Generic backpacker vibe in the heart of Old Manali.',
-        rooms: [{ id: 'm4-r1', name: 'Dorm Bed', price: 1000, capacity: 1, description: 'Social atmosphere' }]
+        rooms: [
+            {
+                id: 'm4-r1',
+                name: 'Dorm Bed',
+                price: 1000,
+                capacity: 1,
+                description: 'Social atmosphere',
+                features: ['Bunk Bed', 'Locker', 'Shared Bath'],
+                image: 'https://images.unsplash.com/photo-1555854743-e3c746dd0971?w=500&auto=format&fit=crop&q=60' // Bunk beds
+            },
+            {
+                id: 'm4-r2',
+                name: 'Private Room',
+                price: 2500,
+                capacity: 2,
+                description: 'Private room with mountain view',
+                features: ['Double Bed', 'Private Bath', 'Mountain View'],
+                image: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=500&auto=format&fit=crop&q=60' // Simple private room
+            }
+        ]
     },
     {
         id: 'manali-5',
@@ -197,7 +452,26 @@ export const hotels = [
         amenities: ['Lawns', 'Games', 'Buffet'],
         type: 'Resort',
         description: 'Surrounded by pine forests in the Log Huts area.',
-        rooms: [{ id: 'm5-r1', name: 'Maharaja Room', price: 3500, capacity: 2, description: 'Royal decor' }]
+        rooms: [
+            {
+                id: 'm5-r1',
+                name: 'Maharaja Room',
+                price: 3500,
+                capacity: 2,
+                description: 'Royal decor',
+                features: ['King Bed', 'Carpeted', 'Bathtub'],
+                image: 'https://images.unsplash.com/photo-1560448204-e897cda51f87?w=500&auto=format&fit=crop&q=60' // Royal decor room
+            },
+            {
+                id: 'm5-r2',
+                name: 'Presidential Suite',
+                price: 6500,
+                capacity: 4,
+                description: 'Two bedrooms with living room',
+                features: ['2 Bedrooms', 'Living Room', 'Forest View'],
+                image: 'https://images.unsplash.com/photo-1591088398332-8a7791972843?w=500&auto=format&fit=crop&q=60' // Luxurious suite
+            }
+        ]
     },
 
     // --- MUNNAR (5 Hotels) ---
@@ -212,7 +486,15 @@ export const hotels = [
         amenities: ['Tea Garden Walk', 'Campfire', 'Restaurant'],
         type: 'Resort',
         description: 'Stay right in the middle of a tea plantation.',
-        rooms: [{ id: 'mu1-r1', name: 'Tea Garden Cottage', price: 4500, capacity: 2, description: 'Greenery all around' }]
+        rooms: [{
+            id: 'mu1-r1',
+            name: 'Tea Garden Cottage',
+            price: 4500,
+            capacity: 2,
+            description: 'Greenery all around',
+            features: ['Tea Garden View', 'Balcony', 'King Bed'],
+            image: 'https://images.unsplash.com/photo-1544984243-ec57ea16fe25?w=500&auto=format&fit=crop&q=60' // Green view
+        }]
     },
     {
         id: 'munnar-2',
@@ -225,7 +507,15 @@ export const hotels = [
         amenities: ['Infinity Pool', 'Spa', 'Trekking'],
         type: 'Resort',
         description: 'Luxury suites nestled in the dense rainforests.',
-        rooms: [{ id: 'mu2-r1', name: 'Jacuzzi Suite', price: 9000, capacity: 2, description: 'Private jacuzzi with view' }]
+        rooms: [{
+            id: 'mu2-r1',
+            name: 'Jacuzzi Suite',
+            price: 9000,
+            capacity: 2,
+            description: 'Private jacuzzi with view',
+            features: ['Jacuzzi', 'Forest View', 'Luxury Bath'],
+            image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=500&auto=format&fit=crop&q=60' // Jacuzzi room
+        }]
     },
     {
         id: 'munnar-3',
@@ -238,7 +528,15 @@ export const hotels = [
         amenities: ['Waterfall View', 'Spa', 'Pool'],
         type: 'Hotel',
         description: 'Premium luxury hotel with views of the Attukad waterfalls.',
-        rooms: [{ id: 'mu3-r1', name: 'Premium Room', price: 12000, capacity: 2, description: 'Sound of waterfalls' }]
+        rooms: [{
+            id: 'mu3-r1',
+            name: 'Premium Room',
+            price: 12000,
+            capacity: 2,
+            description: 'Sound of waterfalls',
+            features: ['Waterfall View', 'Bathtub', 'King Bed'],
+            image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&auto=format&fit=crop&q=60' // Prem room
+        }]
     },
     {
         id: 'munnar-4',
@@ -251,7 +549,15 @@ export const hotels = [
         amenities: ['Common Room', 'WiFi', 'Views'],
         type: 'Hostel',
         description: 'Budget stay with million dollar views.',
-        rooms: [{ id: 'mu4-r1', name: 'Dorm Bed', price: 1100, capacity: 1, description: 'Best for solo travelers' }]
+        rooms: [{
+            id: 'mu4-r1',
+            name: 'Dorm Bed',
+            price: 1100,
+            capacity: 1,
+            description: 'Best for solo travelers',
+            features: ['Bunk Bed', 'Mountain View', 'Locker'],
+            image: 'https://images.unsplash.com/photo-1555854743-e3c746dd0971?w=500&auto=format&fit=crop&q=60'
+        }]
     },
     {
         id: 'munnar-5',
@@ -264,7 +570,15 @@ export const hotels = [
         amenities: ['City Center', 'Restaurant', 'Banquet'],
         type: 'Hotel',
         description: 'Conveniently located in Munnar town.',
-        rooms: [{ id: 'mu5-r1', name: 'Executive Room', price: 3000, capacity: 2, description: 'Access to town' }]
+        rooms: [{
+            id: 'mu5-r1',
+            name: 'Executive Room',
+            price: 3000,
+            capacity: 2,
+            description: 'Access to town',
+            features: ['Town View', 'King Bed', 'WiFi'],
+            image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=500&auto=format&fit=crop&q=60'
+        }]
     },
 
     // --- GOKARNA (5 Hotels) ---
@@ -340,29 +654,314 @@ export const hotels = [
     { id: 'res-3', name: 'Oberoi Vanyavilas', location: 'Ranthambore, India', rating: 4.9, reviews: 800, price: 60000, image: 'https://images.unsplash.com/photo-1571896349842-6e53ce41be03?w=800', amenities: ['Safari', 'Luxury Tent'], type: 'Resort', description: 'India\'s leading luxury jungle resort.', rooms: [{ id: 'r1', name: 'Luxury Tent', price: 60000, capacity: 2 }] },
 
     // --- OTHERS (Generic placeholders for remaining locations to ensure functionality) ---
-    { id: 'gen-1', name: 'Maldives Paradise', location: 'Maldives', rating: 4.8, reviews: 900, price: 45000, image: '/maldives-custom.jpg', amenities: ['Water Villa', 'Ocean'], type: 'Resort', description: 'Luxury stay.', rooms: [{ id: 'r1', name: 'Villa', price: 45000, capacity: 2 }] },
-    { id: 'gen-2', name: 'Krabi Resort', location: 'Krabi, Thailand', rating: 4.5, reviews: 600, price: 8000, image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800', amenities: ['Beach', 'Pool'], type: 'Resort', description: 'Relaxing stay.', rooms: [{ id: 'r1', name: 'Room', price: 8000, capacity: 2 }] },
-    { id: 'gen-3', name: 'Phuket Grand', location: 'Phuket, Thailand', rating: 4.6, reviews: 800, price: 9000, image: '/phuket-custom-new.png', amenities: ['Nightlife', 'Pool'], type: 'Hotel', description: 'Central.', rooms: [{ id: 'r1', name: 'Suite', price: 9000, capacity: 2 }] },
-    { id: 'gen-4', name: 'Langkawi Sea', location: 'Langkawi, Malaysia', rating: 4.7, reviews: 400, price: 12000, image: '/langkawi-custom.png', amenities: ['Nature', 'Sea'], type: 'Resort', description: 'Nature stay.', rooms: [{ id: 'r1', name: 'Chalet', price: 12000, capacity: 2 }] },
-    { id: 'gen-5', name: 'Ooty Heritage', location: 'Ooty, India', rating: 4.4, reviews: 500, price: 4000, image: '/ooty-custom.png', amenities: ['Garden', 'View'], type: 'Hotel', description: 'Colonial charm.', rooms: [{ id: 'r1', name: 'Room', price: 4000, capacity: 2 }] },
-    { id: 'gen-6', name: 'Chandigarh Plaza', location: 'Chandigarh, India', rating: 4.3, reviews: 600, price: 5000, image: '/chandigarh-custom.png', amenities: ['City', 'WiFi'], type: 'Hotel', description: 'Business hotel.', rooms: [{ id: 'r1', name: 'Executive', price: 5000, capacity: 2 }] },
-    { id: 'gen-7', name: 'Dehradun View', location: 'Dehradun, India', rating: 4.2, reviews: 300, price: 3500, image: '/dehradun-custom.png', amenities: ['Valley', 'Food'], type: 'Hotel', description: 'Valley views.', rooms: [{ id: 'r1', name: 'Std Room', price: 3500, capacity: 2 }] },
-    { id: 'gen-8', name: 'Mysore Palace Stay', location: 'Mysore, India', rating: 4.5, reviews: 700, price: 4500, image: '/mysore-custom.png', amenities: ['Heritage', 'Clean'], type: 'Hotel', description: 'Near palace.', rooms: [{ id: 'r1', name: 'Royal', price: 4500, capacity: 2 }] },
-    { id: 'gen-9', name: 'Pokhara Retreat', location: 'Pokhara, Nepal', rating: 4.6, reviews: 400, price: 3000, image: '/pokhara-custom.png', amenities: ['Lake', 'Mountains'], type: 'Hotel', description: 'Lake side.', rooms: [{ id: 'r1', name: 'View Room', price: 3000, capacity: 2 }] },
-    { id: 'gen-10', name: 'Kasol Camps', location: 'Kasol, India', rating: 4.7, reviews: 200, price: 1500, image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800', amenities: ['Bonfire', 'Tent'], type: 'Hostel', description: 'Riverside camping.', rooms: [{ id: 'r1', name: 'Tent', price: 1500, capacity: 2 }] },
-    { id: 'gen-11', name: 'Jodhpur Heritage', location: 'Jodhpur, India', rating: 4.6, reviews: 500, price: 6000, image: '/jodhpur-custom.png', amenities: ['Fort View', 'Tradition'], type: 'Heritage', description: 'Blue city stay.', rooms: [{ id: 'r1', name: 'Heritage', price: 6000, capacity: 2 }] },
-    { id: 'gen-12', name: 'Udaipur Lake', location: 'Udaipur, India', rating: 4.8, reviews: 900, price: 10000, image: 'https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?w=800', amenities: ['Lake', 'Luxury'], type: 'Hotel', description: 'Romantic.', rooms: [{ id: 'r1', name: 'Lake View', price: 10000, capacity: 2 }] },
-    { id: 'gen-13', name: 'Abu Dhabi Stay', location: 'Abu Dhabi, UAE', rating: 4.7, reviews: 400, price: 15000, image: '/abudhabi-custom.png', amenities: ['Luxury', 'Mall'], type: 'Hotel', description: 'City center.', rooms: [{ id: 'r1', name: 'Suite', price: 15000, capacity: 2 }] },
-    { id: 'gen-14', name: 'Dubai Downtown', location: 'Dubai, UAE', rating: 4.8, reviews: 1200, price: 20000, image: '/dubai-custom.png', amenities: ['Burj View', 'Pool'], type: 'Hotel', description: 'Downtown luxury.', rooms: [{ id: 'r1', name: 'Sky Room', price: 20000, capacity: 2 }] },
-    { id: 'gen-15', name: 'Tirupati Stay', location: 'Tirupati, India', rating: 4.3, reviews: 1500, price: 2500, image: '/tirupati-custom.png', amenities: ['Temple', 'Clean'], type: 'Hotel', description: 'Pilgrim stay.', rooms: [{ id: 'r1', name: 'Family', price: 2500, capacity: 4 }] },
-    { id: 'gen-16', name: 'Varanasi Ghat', location: 'Varanasi, India', rating: 4.4, reviews: 800, price: 3000, image: 'https://images.unsplash.com/photo-1561359313-0639aad49ca6?w=800', amenities: ['Ghat', 'Spiritual'], type: 'Guesthouse', description: 'Ghat side.', rooms: [{ id: 'r1', name: 'Ghat View', price: 3000, capacity: 2 }] },
-    { id: 'gen-17', name: 'Puri Beach', location: 'Puri, India', rating: 4.2, reviews: 900, price: 3500, image: '/puri-custom.png', amenities: ['Beach', 'Temple'], type: 'Hotel', description: 'Sea facing.', rooms: [{ id: 'r1', name: 'Sea View', price: 3500, capacity: 2 }] },
-    { id: 'gen-18', name: 'Bhubaneswar City', location: 'Bhubaneswar, India', rating: 4.3, reviews: 400, price: 4000, image: '/bhubaneshwar-custom.png', amenities: ['City', 'Pool'], type: 'Hotel', description: 'Central.', rooms: [{ id: 'r1', name: 'Club', price: 4000, capacity: 2 }] },
-    { id: 'gen-19', name: 'Amritsar Gold', location: 'Amritsar, India', rating: 4.6, reviews: 1000, price: 3000, image: '/amritsar-custom.png', amenities: ['Temple', 'Food'], type: 'Hotel', description: 'Near Golden Temple.', rooms: [{ id: 'r1', name: 'Pilgrim', price: 3000, capacity: 2 }] },
-    { id: 'gen-20', name: 'Amsterdam City', location: 'Amsterdam, Netherlands', rating: 4.7, reviews: 800, price: 18000, image: '/amsterdam-custom.png', amenities: ['Canal', 'Bike'], type: 'Apartment', description: 'Canal house.', rooms: [{ id: 'r1', name: 'Suite', price: 18000, capacity: 2 }] },
-    { id: 'gen-21', name: 'Hong Kong Central', location: 'Hong Kong', rating: 4.6, reviews: 900, price: 22000, image: '/hong-kong-custom.png', amenities: ['Skyline', 'Metro'], type: 'Hotel', description: 'Harbour view.', rooms: [{ id: 'r1', name: 'City', price: 22000, capacity: 2 }] },
-    { id: 'gen-22', name: 'Mumbai Sea', location: 'Mumbai, India', rating: 4.5, reviews: 1500, price: 12000, image: 'https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?w=800', amenities: ['Sea', 'Luxury'], type: 'Hotel', description: 'Marine Drive.', rooms: [{ id: 'r1', name: 'Sea View', price: 12000, capacity: 2 }] },
-    { id: 'gen-23', name: 'Pattaya Bay', location: 'Pattaya, Thailand', rating: 4.3, reviews: 600, price: 6000, image: '/pattaya-custom.png', amenities: ['Beach', 'Party'], type: 'Hotel', description: 'Walking street.', rooms: [{ id: 'r1', name: 'Ocean', price: 6000, capacity: 2 }] },
+    {
+        id: 'gen-1',
+        name: 'Maldives Paradise',
+        location: 'Maldives',
+        rating: 4.8,
+        reviews: 900,
+        price: 45000,
+        image: '/maldives-custom.jpg',
+        amenities: ['Water Villa', 'Ocean'],
+        type: 'Resort',
+        description: 'Luxury stay.',
+        rooms: [
+            { id: 'r1', name: 'Beach Villa', price: 45000, capacity: 2, description: 'Direct beach access', features: ['Beach Access'], image: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=500&auto=format&fit=crop&q=60' },
+            { id: 'r2', name: 'Water Villa', price: 65000, capacity: 2, description: 'Overwater villa with pool', features: ['Private Pool', 'Ocean View'], image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500&auto=format&fit=crop&q=60' }
+        ]
+    },
+    {
+        id: 'gen-2',
+        name: 'Krabi Resort',
+        location: 'Krabi, Thailand',
+        rating: 4.5,
+        reviews: 600,
+        price: 8000,
+        image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800',
+        amenities: ['Beach', 'Pool'],
+        type: 'Resort',
+        description: 'Relaxing stay.',
+        rooms: [{ id: 'r1', name: 'Room', price: 8000, capacity: 2, features: ['AC', 'WiFi'], image: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-3',
+        name: 'Phuket Grand',
+        location: 'Phuket, Thailand',
+        rating: 4.6,
+        reviews: 800,
+        price: 9000,
+        image: '/phuket-custom-new.png',
+        amenities: ['Nightlife', 'Pool'],
+        type: 'Hotel',
+        description: 'Central.',
+        rooms: [{ id: 'r1', name: 'Suite', price: 9000, capacity: 2, features: ['City View'], image: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-4',
+        name: 'Langkawi Sea',
+        location: 'Langkawi, Malaysia',
+        rating: 4.7,
+        reviews: 400,
+        price: 12000,
+        image: '/langkawi-custom.png',
+        amenities: ['Nature', 'Sea'],
+        type: 'Resort',
+        description: 'Nature stay.',
+        rooms: [{ id: 'r1', name: 'Chalet', price: 12000, capacity: 2, features: ['Sea View', 'Balcony'], image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-5',
+        name: 'Ooty Heritage',
+        location: 'Ooty, India',
+        rating: 4.4,
+        reviews: 500,
+        price: 4000,
+        image: '/ooty-custom.png',
+        amenities: ['Garden', 'View'],
+        type: 'Hotel',
+        description: 'Colonial charm.',
+        rooms: [{ id: 'r1', name: 'Room', price: 4000, capacity: 2, features: ['Garden View'], image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-6',
+        name: 'Chandigarh Plaza',
+        location: 'Chandigarh, India',
+        rating: 4.3,
+        reviews: 600,
+        price: 5000,
+        image: '/chandigarh-custom.png',
+        amenities: ['City', 'WiFi'],
+        type: 'Hotel',
+        description: 'Business hotel.',
+        rooms: [{ id: 'r1', name: 'Executive', price: 5000, capacity: 2, features: ['Work Desk'], image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-7',
+        name: 'Dehradun View',
+        location: 'Dehradun, India',
+        rating: 4.2,
+        reviews: 300,
+        price: 3500,
+        image: '/dehradun-custom.png',
+        amenities: ['Valley', 'Food'],
+        type: 'Hotel',
+        description: 'Valley views.',
+        rooms: [{ id: 'r1', name: 'Std Room', price: 3500, capacity: 2, features: ['Valley View'], image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-8',
+        name: 'Mysore Palace Stay',
+        location: 'Mysore, India',
+        rating: 4.5,
+        reviews: 700,
+        price: 4500,
+        image: '/mysore-custom.png',
+        amenities: ['Heritage', 'Clean'],
+        type: 'Hotel',
+        description: 'Near palace.',
+        rooms: [{ id: 'r1', name: 'Royal', price: 4500, capacity: 2, features: ['Heritage Decor'], image: 'https://images.unsplash.com/photo-1560448204-e897cda51f87?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-9',
+        name: 'Pokhara Retreat',
+        location: 'Pokhara, Nepal',
+        rating: 4.6,
+        reviews: 400,
+        price: 3000,
+        image: '/pokhara-custom.png',
+        amenities: ['Lake', 'Mountains'],
+        type: 'Hotel',
+        description: 'Lake side.',
+        rooms: [{ id: 'r1', name: 'View Room', price: 3000, capacity: 2, features: ['Lake View'], image: 'https://images.unsplash.com/photo-1544984243-ec57ea16fe25?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-10',
+        name: 'Kasol Camps',
+        location: 'Kasol, India',
+        rating: 4.7,
+        reviews: 200,
+        price: 1500,
+        image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800',
+        amenities: ['Bonfire', 'Tent'],
+        type: 'Hostel',
+        description: 'Riverside camping.',
+        rooms: [{ id: 'r1', name: 'Tent', price: 1500, capacity: 2, features: ['Sleeping Bag'], image: 'https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-11',
+        name: 'Jodhpur Heritage',
+        location: 'Jodhpur, India',
+        rating: 4.6,
+        reviews: 500,
+        price: 6000,
+        image: '/jodhpur-custom.png',
+        amenities: ['Fort View', 'Tradition'],
+        type: 'Heritage',
+        description: 'Blue city stay.',
+        rooms: [{ id: 'r1', name: 'Heritage', price: 6000, capacity: 2, features: ['Fort View'], image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-12',
+        name: 'Udaipur Lake',
+        location: 'Udaipur, India',
+        rating: 4.8,
+        reviews: 900,
+        price: 10000,
+        image: 'https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?w=800',
+        amenities: ['Lake', 'Luxury'],
+        type: 'Hotel',
+        description: 'Romantic.',
+        rooms: [
+            { id: 'r1', name: 'Lake View', price: 10000, capacity: 2, description: 'View of Lake Pichola', features: ['Lake View', 'Bathtub'], image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=500&auto=format&fit=crop&q=60' },
+            { id: 'r2', name: 'Heritage Suite', price: 15000, capacity: 2, description: 'Royal decor', features: ['King Bed', 'Butler'], image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500&auto=format&fit=crop&q=60' }
+        ]
+    },
+    {
+        id: 'gen-13',
+        name: 'Abu Dhabi Stay',
+        location: 'Abu Dhabi, UAE',
+        rating: 4.7,
+        reviews: 400,
+        price: 15000,
+        image: '/abudhabi-custom.png',
+        amenities: ['Luxury', 'Mall'],
+        type: 'Hotel',
+        description: 'City center.',
+        rooms: [{ id: 'r1', name: 'Suite', price: 15000, capacity: 2, features: ['City View'], image: 'https://images.unsplash.com/photo-1544984243-ec57ea16fe25?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-14',
+        name: 'Dubai Downtown',
+        location: 'Dubai, UAE',
+        rating: 4.8,
+        reviews: 1200,
+        price: 20000,
+        image: '/dubai-custom.png',
+        amenities: ['Burj View', 'Pool'],
+        type: 'Hotel',
+        description: 'Downtown luxury.',
+        rooms: [
+            { id: 'r1', name: 'Sky Room', price: 20000, capacity: 2, description: 'View of Burj Khalifa', features: ['Burj View'], image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=500&auto=format&fit=crop&q=60' },
+            { id: 'r2', name: 'Luxury Suite', price: 35000, capacity: 2, description: 'Access to club lounge', features: ['Club Access', 'Bathtub'], image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500&auto=format&fit=crop&q=60' }
+        ]
+    },
+    {
+        id: 'gen-15',
+        name: 'Tirupati Stay',
+        location: 'Tirupati, India',
+        rating: 4.3,
+        reviews: 1500,
+        price: 2500,
+        image: '/tirupati-custom.png',
+        amenities: ['Temple', 'Clean'],
+        type: 'Hotel',
+        description: 'Pilgrim stay.',
+        rooms: [{ id: 'r1', name: 'Family', price: 2500, capacity: 4, features: ['4 Beds'], image: 'https://images.unsplash.com/photo-1595576508898-0ad5c879a062?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-16',
+        name: 'Varanasi Ghat',
+        location: 'Varanasi, India',
+        rating: 4.4,
+        reviews: 800,
+        price: 3000,
+        image: 'https://images.unsplash.com/photo-1561359313-0639aad49ca6?w=800',
+        amenities: ['Ghat', 'Spiritual'],
+        type: 'Guesthouse',
+        description: 'Ghat side.',
+        rooms: [{ id: 'r1', name: 'Ghat View', price: 3000, capacity: 2, features: ['Ganges View'], image: 'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-17',
+        name: 'Puri Beach',
+        location: 'Puri, India',
+        rating: 4.2,
+        reviews: 900,
+        price: 3500,
+        image: '/puri-custom.png',
+        amenities: ['Beach', 'Temple'],
+        type: 'Hotel',
+        description: 'Sea facing.',
+        rooms: [{ id: 'r1', name: 'Sea View', price: 3500, capacity: 2, features: ['Sea View'], image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-18',
+        name: 'Bhubaneswar City',
+        location: 'Bhubaneswar, India',
+        rating: 4.3,
+        reviews: 400,
+        price: 4000,
+        image: '/bhubaneshwar-custom.png',
+        amenities: ['City', 'Pool'],
+        type: 'Hotel',
+        description: 'Central.',
+        rooms: [{ id: 'r1', name: 'Club', price: 4000, capacity: 2, features: ['Pool View'], image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-19',
+        name: 'Amritsar Gold',
+        location: 'Amritsar, India',
+        rating: 4.6,
+        reviews: 1000,
+        price: 3000,
+        image: '/amritsar-custom.png',
+        amenities: ['Temple', 'Food'],
+        type: 'Hotel',
+        description: 'Near Golden Temple.',
+        rooms: [{ id: 'r1', name: 'Pilgrim', price: 3000, capacity: 2, features: ['AC'], image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-20',
+        name: 'Amsterdam City',
+        location: 'Amsterdam, Netherlands',
+        rating: 4.7,
+        reviews: 800,
+        price: 18000,
+        image: '/amsterdam-custom.png',
+        amenities: ['Canal', 'Bike'],
+        type: 'Apartment',
+        description: 'Canal house.',
+        rooms: [{ id: 'r1', name: 'Suite', price: 18000, capacity: 2, features: ['Canal View'], image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-21',
+        name: 'Hong Kong Central',
+        location: 'Hong Kong',
+        rating: 4.6,
+        reviews: 900,
+        price: 22000,
+        image: '/hong-kong-custom.png',
+        amenities: ['Skyline', 'Metro'],
+        type: 'Hotel',
+        description: 'Harbour view.',
+        rooms: [{ id: 'r1', name: 'City', price: 22000, capacity: 2, features: ['Harbour View'], image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-22',
+        name: 'Mumbai Sea',
+        location: 'Mumbai, India',
+        rating: 4.5,
+        reviews: 1500,
+        price: 12000,
+        image: 'https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?w=800',
+        amenities: ['Sea', 'Luxury'],
+        type: 'Hotel',
+        description: 'Marine Drive.',
+        rooms: [{ id: 'r1', name: 'Sea View', price: 12000, capacity: 2, features: ['Sea View'], image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&auto=format&fit=crop&q=60' }]
+    },
+    {
+        id: 'gen-23',
+        name: 'Pattaya Bay',
+        location: 'Pattaya, Thailand',
+        rating: 4.3,
+        reviews: 600,
+        price: 6000,
+        image: '/pattaya-custom.png',
+        amenities: ['Beach', 'Party'],
+        type: 'Hotel',
+        description: 'Walking street.',
+        rooms: [{ id: 'r1', name: 'Ocean', price: 6000, capacity: 2, features: ['Ocean View'], image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=500&auto=format&fit=crop&q=60' }]
+    },
     // --- CITY HOTELS WITH AMENITIES (Enriching for Filters) ---
     { id: 'city-1', name: 'Urban Oasis Hotel', location: 'Bangalore, India', rating: 4.4, reviews: 1100, price: 4500, image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800', amenities: ['Pool', 'WiFi', 'Gym', 'Restaurant'], type: 'Hotel', description: 'Modern city hotel with all amenities.', rooms: [{ id: 'r1', name: 'City Room', price: 4500, capacity: 2 }] },
     { id: 'city-2', name: 'Grand Plaza', location: 'Hyderabad, India', rating: 4.3, reviews: 900, price: 5000, image: 'https://images.unsplash.com/photo-1517840901100-8179e982acb7?w=800', amenities: ['Pool', 'Spa', 'AC', 'Parking'], type: 'Hotel', description: 'Luxury in the city.', rooms: [{ id: 'r1', name: 'Club Room', price: 5000, capacity: 2 }] },

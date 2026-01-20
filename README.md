@@ -1,8 +1,8 @@
-# Snoraa - Hotel Booking Application 🏨
+# VYBE Haus - Hotel Booking Application 🏨
 
-A premium, modern hotel booking platform built with **React** and **Vite**. Snoraa offers a seamless experience for users to discover, filter, and book hotels with a polished UI and intuitive user flow.
+A premium, modern hotel booking platform built with **React** and **Vite**. VYBE Haus offers a seamless experience for users to discover, filter, and book hotels with a polished UI and intuitive user flow.
 
-![Snoraa Demo](public/snoraa_logo_icon.png)
+![VYBE Haus Demo](public/vybe_logo_icon.png)
 
 ## ✨ Features
 
@@ -26,11 +26,11 @@ A premium, modern hotel booking platform built with **React** and **Vite**. Snor
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/navyaaggarwal29/snoraa-hotel-booking.git
+    git clone https://github.com/navyaaggarwal29/vybe-haus-hotel-booking.git
     ```
 2.  **Install dependencies**
     ```bash
-    cd snoraa-hotel-booking
+    cd vybe-haus-hotel-booking
     npm install
     ```
 3.  **Run the development server**

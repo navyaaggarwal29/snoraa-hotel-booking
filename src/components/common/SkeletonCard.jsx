@@ -3,7 +3,7 @@ import React from 'react';
 const SkeletonCard = ({ viewMode = 'grid' }) => {
     return (
         <div style={{
-            background: 'white',
+            background: 'var(--card-bg)',
             borderRadius: 'var(--radius-lg)',
             overflow: 'hidden',
             boxShadow: 'none',

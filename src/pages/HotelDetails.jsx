@@ -83,13 +83,13 @@ const HotelDetails = () => {
                 />
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                     <img
-                        src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                        alt="Interior"
+                        src={hotel.rooms?.[0]?.image || "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500&auto=format&fit=crop&q=60"}
+                        alt="Interior 1"
                         style={{ width: '100%', height: 'calc(50% - 0.5rem)', objectFit: 'cover' }}
                     />
                     <img
-                        src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                        alt="Room"
+                        src={hotel.rooms?.[1]?.image || hotel.rooms?.[0]?.image || "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=500&auto=format&fit=crop&q=60"}
+                        alt="Interior 2"
                         style={{ width: '100%', height: 'calc(50% - 0.5rem)', objectFit: 'cover' }}
                     />
                 </div>
@@ -116,22 +116,66 @@ const HotelDetails = () => {
                                     style={{
                                         border: selectedRoom?.id === room.id ? '2px solid var(--primary)' : '1px solid var(--border)',
                                         borderRadius: 'var(--radius-lg)',
-                                        padding: '1.5rem',
                                         cursor: 'pointer',
                                         background: selectedRoom?.id === room.id ? 'var(--primary-light)' : 'var(--card-bg)',
                                         transition: 'all 0.2s',
-                                        display: 'flex',
-                                        justifyContent: 'space-between',
-                                        alignItems: 'center'
+                                        overflow: 'hidden'
                                     }}>
-                                    <div>
-                                        <div style={{ fontWeight: 'bold', fontSize: 'var(--font-size-lg)' }}>{room.name}</div>
-                                        <div style={{ color: 'var(--text-muted)', fontSize: 'var(--font-size-sm)' }}>{room.description}</div>
-                                        <div style={{ marginTop: '0.5rem', fontSize: 'var(--font-size-sm)' }}>Max: {room.capacity} Guests</div>
-                                    </div>
-                                    <div style={{ textAlign: 'right' }}>
-                                        <div style={{ fontSize: 'var(--font-size-xl)', fontWeight: 'bold' }}>₹{room.price}</div>
-                                        <div style={{ fontSize: 'var(--font-size-sm)', color: 'var(--text-muted)' }}>/ night</div>
+                                    <div style={{ display: 'flex', flexDirection: window.innerWidth < 640 ? 'column' : 'row' }}>
+                                        {/* Room Image */}
+                                        <div style={{
+                                            width: window.innerWidth < 640 ? '100%' : '180px',
+                                            height: window.innerWidth < 640 ? '160px' : 'auto',
+                                            flexShrink: 0
+                                        }}>
+                                            <img
+                                                src={room.image || hotel.image}
+                                                alt={room.name}
+                                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                                loading="lazy"
+                                            />
+                                        </div>
+
+                                        {/* Content */}
+                                        <div style={{
+                                            padding: '1.25rem',
+                                            flex: 1,
+                                            display: 'flex',
+                                            justifyContent: 'space-between',
+                                            alignItems: 'center',
+                                            flexWrap: 'wrap',
+                                            gap: '1rem'
+                                        }}>
+                                            <div style={{ flex: 1, minWidth: '200px' }}>
+                                                <div style={{ fontWeight: 'bold', fontSize: 'var(--font-size-lg)' }}>{room.name}</div>
+                                                <div style={{ color: 'var(--text-muted)', fontSize: 'var(--font-size-sm)', marginBottom: '0.5rem' }}>{room.description}</div>
+
+                                                {/* Room Features */}
+                                                {room.features && (
+                                                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                                                        {room.features.map((feature, index) => (
+                                                            <span key={index} style={{
+                                                                fontSize: '0.75rem',
+                                                                background: 'var(--bg-secondary)',
+                                                                padding: '0.25rem 0.5rem',
+                                                                borderRadius: '4px',
+                                                                border: '1px solid var(--border)',
+                                                                color: 'var(--text-main)'
+                                                            }}>
+                                                                {feature}
+                                                            </span>
+                                                        ))}
+                                                    </div>
+                                                )}
+
+                                                <div style={{ fontSize: 'var(--font-size-sm)' }}>Max: {room.capacity} Guests</div>
+                                            </div>
+
+                                            <div style={{ textAlign: 'right' }}>
+                                                <div style={{ fontSize: 'var(--font-size-xl)', fontWeight: 'bold' }}>₹{room.price}</div>
+                                                <div style={{ fontSize: 'var(--font-size-sm)', color: 'var(--text-muted)' }}>/ night</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             ))}
