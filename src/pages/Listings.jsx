@@ -184,7 +184,7 @@ const Listings = () => {
                                     padding: '0.5rem 1rem',
                                     border: '1px solid var(--border)',
                                     borderRadius: 'var(--radius-md)',
-                                    background: currentPage === 1 ? 'var(--background)' : 'white',
+                                    background: currentPage === 1 ? 'var(--background)' : 'var(--card-bg)',
                                     cursor: currentPage === 1 ? 'not-allowed' : 'pointer',
                                     color: currentPage === 1 ? 'var(--text-muted)' : 'var(--text-main)'
                                 }}
@@ -204,7 +204,7 @@ const Listings = () => {
                                         justifyContent: 'center',
                                         border: page === currentPage ? 'none' : '1px solid var(--border)',
                                         borderRadius: 'var(--radius-md)',
-                                        background: page === currentPage ? 'var(--primary)' : 'white',
+                                        background: page === currentPage ? 'var(--primary)' : 'var(--card-bg)',
                                         color: page === currentPage ? 'white' : 'var(--text-main)',
                                         fontWeight: page === currentPage ? 'bold' : 'normal',
                                         cursor: 'pointer'
@@ -221,7 +221,7 @@ const Listings = () => {
                                     padding: '0.5rem 1rem',
                                     border: '1px solid var(--border)',
                                     borderRadius: 'var(--radius-md)',
-                                    background: currentPage === totalPages ? 'var(--background)' : 'white',
+                                    background: currentPage === totalPages ? 'var(--background)' : 'var(--card-bg)',
                                     cursor: currentPage === totalPages ? 'not-allowed' : 'pointer',
                                     color: currentPage === totalPages ? 'var(--text-muted)' : 'var(--text-main)'
                                 }}

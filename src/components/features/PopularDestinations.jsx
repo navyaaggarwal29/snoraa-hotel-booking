@@ -41,7 +41,7 @@ const destinations = [
         id: 'maldives',
         name: 'Maldives',
         description: 'Tropical paradise boastings stunning beaches',
-        image: 'https://images.unsplash.com/photo-1573843980622-be7d5fe6d467?w=800&auto=format&fit=crop&q=60',
+        image: '/maldives-pop-updated.png',
         size: 'normal'
     }
 ];

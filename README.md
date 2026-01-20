@@ -2,7 +2,7 @@
 
 A premium, modern hotel booking platform built with **React** and **Vite**. VYBE Haus offers a seamless experience for users to discover, filter, and book hotels with a polished UI and intuitive user flow.
 
-![VYBE Haus Demo](public/vybe_logo_icon.png)
+![VYBE Haus Demo](public/assets/home_screenshot.png)
 
 ## ✨ Features
 
@@ -40,7 +40,11 @@ A premium, modern hotel booking platform built with **React** and **Vite**. VYBE
 4.  Open `http://localhost:5173` to view it in the browser.
 
 ##  Screenshots
-*(Add screenshots of your application here)*
+##  Screenshots
+![Home Page](public/assets/home_screenshot.png)
+![Search Results](public/assets/search_screenshot.png)
+![Discovery Tabs](public/assets/discovery_screenshot.png)
+![Hotel Details](public/assets/listing_screenshot.png)
 
 ##  License
 This project is open-source and available under the [MIT License](LICENSE).

@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { hotels as mockHotels } from '../services/mockData';
-import { Star, MapPin, Wifi, Wind, Coffee, Anchor, ArrowLeft, CheckCircle } from 'lucide-react';
+import { Star, MapPin, Wifi, Wind, Coffee, Anchor, ArrowLeft, CheckCircle, Heart } from 'lucide-react';
 import Button from '../components/common/Button';
 import { useAuth } from '../context/AuthContext';
+import { useWishlist } from '../context/WishlistContext';
 import { toast } from 'react-hot-toast';
 
 const HotelDetails = () => {
     const { id } = useParams();
     const navigate = useNavigate();
     const { isAuthenticated } = useAuth();
+    const { isInWishlist, addToWishlist, removeFromWishlist } = useWishlist();
     const [hotel, setHotel] = useState(null);
     const [selectedRoom, setSelectedRoom] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -55,7 +57,39 @@ const HotelDetails = () => {
 
             {/* Header Info */}
             <div style={{ marginBottom: '2rem' }}>
-                <h1 style={{ fontSize: 'var(--font-size-3xl)', fontWeight: 'bold', marginBottom: '0.5rem' }}>{hotel.name}</h1>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
+                    <h1 style={{ fontSize: 'var(--font-size-3xl)', fontWeight: 'bold', marginBottom: '0.5rem' }}>{hotel.name}</h1>
+                    <button
+                        onClick={() => {
+                            if (isInWishlist(hotel.id)) {
+                                removeFromWishlist(hotel.id);
+                            } else {
+                                addToWishlist(hotel);
+                            }
+                        }}
+                        style={{
+                            background: 'var(--card-bg)',
+                            border: '1px solid var(--border)',
+                            borderRadius: '50%',
+                            width: '48px',
+                            height: '48px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            cursor: 'pointer',
+                            boxShadow: 'var(--shadow-sm)',
+                            transition: 'all 0.2s'
+                        }}
+                        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                    >
+                        <Heart
+                            size={24}
+                            fill={isInWishlist(hotel.id) ? '#ef4444' : 'transparent'}
+                            color={isInWishlist(hotel.id) ? '#ef4444' : 'var(--text-muted)'}
+                        />
+                    </button>
+                </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: 'var(--text-muted)' }}>
                     <span style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
                         <MapPin size={18} /> {hotel.location}

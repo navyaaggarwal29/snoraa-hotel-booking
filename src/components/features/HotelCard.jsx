@@ -1,9 +1,21 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Star, MapPin, Wifi, Wind, Coffee, Anchor } from 'lucide-react';
+import { Star, MapPin, Wifi, Wind, Coffee, Anchor, Heart } from 'lucide-react';
+import { useWishlist } from '../../context/WishlistContext';
 
 const HotelCard = ({ hotel, viewMode = 'grid' }) => {
     const navigate = useNavigate();
+    const { isInWishlist, addToWishlist, removeFromWishlist } = useWishlist();
+    const isWishlisted = isInWishlist(hotel.id);
+
+    const handleWishlistToggle = (e) => {
+        e.stopPropagation(); // Prevent navigation
+        if (isWishlisted) {
+            removeFromWishlist(hotel.id);
+        } else {
+            addToWishlist(hotel);
+        }
+    };
 
     return (
         <div
@@ -46,6 +58,36 @@ const HotelCard = ({ hotel, viewMode = 'grid' }) => {
                     }}
                 />
             </div>
+
+            {/* Wishlist Button */}
+            <button
+                onClick={handleWishlistToggle}
+                style={{
+                    position: 'absolute',
+                    top: '10px',
+                    right: '10px',
+                    background: 'rgba(255, 255, 255, 0.9)',
+                    border: 'none',
+                    borderRadius: '50%',
+                    width: '32px',
+                    height: '32px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    cursor: 'pointer',
+                    boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                    transition: 'transform 0.2s',
+                    zIndex: 2
+                }}
+                onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
+                onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+            >
+                <Heart
+                    size={18}
+                    fill={isWishlisted ? '#ef4444' : 'transparent'}
+                    color={isWishlisted ? '#ef4444' : '#64748b'}
+                />
+            </button>
 
             <div style={{ padding: '1rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start', marginBottom: '0.5rem' }}>

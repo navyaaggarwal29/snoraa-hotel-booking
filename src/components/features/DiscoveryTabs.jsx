@@ -7,7 +7,7 @@ const DiscoveryTabs = () => {
 
     const categories = {
         'Beach Vacations': [
-            { name: 'Maldives', img: 'https://images.unsplash.com/photo-1573843980622-be7d5fe6d467?w=500&q=80' },
+            { name: 'Maldives', img: '/maldives-custom-new.png' },
             { name: 'Krabi', img: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=500&q=80' },
             { name: 'Phuket', img: '/phuket-custom-new.png' },
             { name: 'Langkawi', img: '/langkawi-custom.png' },

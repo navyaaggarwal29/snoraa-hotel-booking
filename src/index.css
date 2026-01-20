@@ -75,6 +75,16 @@
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
 }
 
+[data-theme='dark'] input[type="date"] {
+  color-scheme: dark;
+  background: transparent !important;
+  color: var(--text-main) !important;
+}
+
+[data-theme='dark'] input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
