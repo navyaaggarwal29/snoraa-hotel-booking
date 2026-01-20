@@ -16,13 +16,13 @@ A premium, modern hotel booking platform built with **React** and **Vite**. VYBE
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React.js, Vite
-- **Styling**: Vanilla CSS (Variables & Responsive Design), Google Fonts ('Outfit')
-- **Icons**: Lucide React
-- **Notifications**: React Hot Toast
-- **State Management**: Context API (Auth, Wishlist, Theme)
+- Frontend: React.js, Vite
+- Styling: Vanilla CSS (Variables & Responsive Design), Google Fonts ('Outfit')
+- Icons: Lucide React
+- Notifications: React Hot Toast
+- State Management: Context API (Auth, Wishlist, Theme)
 
-## 🚀 Getting Started
+##  Getting Started
 
 1.  **Clone the repository**
     ```bash
@@ -39,8 +39,8 @@ A premium, modern hotel booking platform built with **React** and **Vite**. VYBE
     ```
 4.  Open `http://localhost:5173` to view it in the browser.
 
-## 📸 Screenshots
+##  Screenshots
 *(Add screenshots of your application here)*
 
-## 📄 License
+##  License
 This project is open-source and available under the [MIT License](LICENSE).
