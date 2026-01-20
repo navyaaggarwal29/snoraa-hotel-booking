@@ -1,6 +1,6 @@
 # VYBE Haus - Hotel Booking Application 
 
-A premium, modern hotel booking platform built with **React** and **Vite**. VYBE Haus offers a seamless experience for users to discover, filter, and book hotels with a polished UI and intuitive user flow.
+A premium, modern hotel booking platform built with React and Vite. VYBE Haus offers a seamless experience for users to discover, filter, and book hotels with a polished UI and intuitive user flow.
 
 <div align="center">
   <img src="public/vybe-icon-big.png" alt="VYBE Icon" width="150" />
@@ -10,13 +10,13 @@ A premium, modern hotel booking platform built with **React** and **Vite**. VYBE
 
 ## Features
 
-- ** Interactive Listings**: Grid and List view toggles for flexible browsing.
-- ** Advanced Search & Filtering**: Filter by price, amenities, rating, and property type.
-- ** Wishlist**: Save your favorite properties for later.
-- ** Dark/Light Mode**: Fully themeable UI with a toggle switch.
-- ** Skeleton Loading**: Smooth loading states for a better user experience.
-- ** PDF Ticket Download**: Generate and download booking confirmations instantly.
-- ** Fully Responsive**: Optimized for desktop, tablet, and mobile devices.
+- Interactive Listings: Grid and List view toggles for flexible browsing.
+-  Advanced Search & Filtering: Filter by price, amenities, rating, and property type.
+-  Wishlist: Save your favorite properties for later.
+-  Dark/Light Mode: Fully themeable UI with a toggle switch.
+-  Skeleton Loading: Smooth loading states for a better user experience.
+-  PDF Ticket Download: Generate and download booking confirmations instantly.
+-  Fully Responsive: Optimized for desktop, tablet, and mobile devices.
 
 ##  Tech Stack
 
